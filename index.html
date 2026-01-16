@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ergashev Oxunjon — Fullstack Dasturchi (Talaba)</title>
+  <meta name="description" content="Ergashev Oxunjon — Fullstack dasturchi (Talaba). Portfolio, hosting sayti, Bootstrap admin demo, job application, instagram clone, e'lon sayti." />
+
+  <!-- Open Graph (optional) -->
+  <meta property="og:title" content="Ergashev Oxunjon — Fullstack Developer Portfolio" />
+  <meta property="og:description" content="Premium dark mode portfolio, Bootstrap + Vanilla JS animatsiyalar." />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E" />
+</head>
+
+<body class="theme-dark">
+  <!-- Ambient background -->
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="grid-noise"></span>
+  </div>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Kontentga o‘tish</a>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top nav-glass">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top" aria-label="Bosh sahifa">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="fw-semibold">Oxunjon</span>
+        <span class="text-secondary d-none d-sm-inline">/ Fullstack</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Menyuni ochish">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-gradient btn-sm px-3" href="assets/cv.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-download me-1"></i> Download CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menyu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Yopish"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-grid gap-2">
+        <a class="btn btn-outline-light" href="#about" data-bs-dismiss="offcanvas">About</a>
+        <a class="btn btn-outline-light" href="#skills" data-bs-dismiss="offcanvas">Skills</a>
+        <a class="btn btn-outline-light" href="#projects" data-bs-dismiss="offcanvas">Projects</a>
+        <a class="btn btn-outline-light" href="#experience" data-bs-dismiss="offcanvas">Experience</a>
+        <a class="btn btn-outline-light" href="#testimonials" data-bs-dismiss="offcanvas">Testimonials</a>
+        <a class="btn btn-outline-light" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+        <a class="btn btn-gradient" href="assets/cv.pdf" target="_blank" rel="noopener">
+          <i class="bi bi-download me-1"></i> Download CV
+        </a>
+      </div>
+
+      <hr class="border-secondary opacity-25 my-4" />
+
+      <div class="d-flex gap-2">
+        <a class="icon-btn" href="https://github.com/Ergashev-Oxunjon" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a class="icon-btn" href="https://t.me/Ergashev_Oxunjon" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        <a class="icon-btn" href="https://www.instagram.com/oxunjon_ergashev_" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="icon-btn" href="mailto:oxunjonergashev19@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <header id="top" class="section hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <div class="pill reveal">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Fullstack dasturchi • Talaba</span>
+            </div>
+
+            <h1 class="display-5 fw-bold mt-3 reveal">
+              Ergashev <span class="text-gradient">Oxunjon</span>
+            </h1>
+
+            <p class="lead text-secondary mt-3 reveal">
+              Men zamonaviy web ilovalar yarataman: toza UI, tezkor frontend, tartibli backend va real loyihalar.
+              Portfolio, hosting sayti, Bootstrap admin demo, job application, Instagram clone, e’lon sayti.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4 reveal">
+              <a class="btn btn-gradient btn-lg px-4" href="#projects">
+                <i class="bi bi-grid-3x3-gap me-1"></i> View Projects
+              </a>
+              <a class="btn btn-outline-light btn-lg px-4" href="#contact">
+                <i class="bi bi-chat-dots me-1"></i> Contact Me
+              </a>
+              <a class="btn btn-ghost btn-lg px-4" href="#about">
+                <i class="bi bi-arrow-down me-1"></i> Learn More
+              </a>
+            </div>
+
+            <div class="hero-metrics mt-4 reveal">
+              <div class="metric">
+                <div class="metric-title">Yo‘nalish</div>
+                <div class="metric-value">Fullstack</div>
+              </div>
+              <div class="metric">
+                <div class="metric-title">Stack</div>
+                <div class="metric-value">HTML • CSS • Bootstrap • JS</div>
+              </div>
+              <div class="metric">
+                <div class="metric-title">Maqsad</div>
+                <div class="metric-value">Real jobs & real products</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="profile-card reveal">
+              <div class="profile-top">
+                <div class="status">
+                  <span class="pulse" aria-hidden="true"></span>
+                  <span>Available for collaboration</span>
+                </div>
+                <div class="chip">
+                  <i class="bi bi-geo-alt me-1"></i> Uzbekistan
+                </div>
+              </div>
+
+              <div class="profile-body">
+                <img class="profile-img" src="assets/img/profile.jpg" alt="Ergashev Oxunjon profil rasmi (placeholder)" />
+                <div class="profile-meta mt-3">
+                  <div class="h5 mb-1">Oxunjon</div>
+                  <div class="text-secondary small">Fullstack Developer (Talaba)</div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge badge-soft"><i class="bi bi-code-slash me-1"></i> Web Apps</span>
+                  <span class="badge badge-soft"><i class="bi bi-lightning me-1"></i> Fast UI</span>
+                  <span class="badge badge-soft"><i class="bi bi-shield-check me-1"></i> Clean Code</span>
+                </div>
+
+                <div class="d-flex gap-2 mt-4">
+                  <a class="icon-btn" href="https://github.com/Ergashev-Oxunjon" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                  <a class="icon-btn" href="https://t.me/Ergashev_Oxunjon" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+                  <a class="icon-btn" href="https://www.instagram.com/oxunjon_ergashev_" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a class="icon-btn" href="#contact" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+
+              <div class="profile-footer">
+                <div class="small text-secondary">Last update: <span id="lastUpdated">—</span></div>
+                <a class="small link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#contact">
+                  Let’s build something <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-hint mt-5 reveal" aria-hidden="true">
+          <span class="mouse"></span>
+          <span class="text-secondary small">Scroll</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h1 fw-semibold">About</h2>
+          <p class="text-secondary mb-0">Qisqa tanishtiruv va mening ish uslubim.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-7">
+            <div class="card card-glass reveal">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h4 fw-semibold mb-3">Men qanday ishlayman?</h3>
+                <p class="text-secondary mb-3">
+                  Men UI/UX, responsive layout, animatsiya va kod arxitekturaga e’tibor beraman.
+                  Maqsad — foydalanuvchi uchun qulay, tez va chiroyli web tajriba yaratish.
+                </p>
+                <ul class="text-secondary mb-0 nice-list">
+                  <li>Design: clean, premium, minimal, dark mode + gradient accent</li>
+                  <li>Frontend: Bootstrap grid + komponentlar + micro-interactions</li>
+                  <li>JS: scroll reveal, filter, validation, active nav, smooth UX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="stat-card reveal">
+                  <div class="stat-icon"><i class="bi bi-stars"></i></div>
+                  <div>
+                    <div class="stat-title">Yo‘nalish</div>
+                    <div class="stat-value">Fullstack Developer (Talaba)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12">
+                <div class="stat-card reveal">
+                  <div class="stat-icon"><i class="bi bi-stack"></i></div>
+                  <div>
+                    <div class="stat-title">Asosiy texnologiyalar</div>
+                    <div class="stat-value">HTML • CSS • Bootstrap • JS</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12">
+                <div class="stat-card reveal">
+                  <div class="stat-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                  <div>
+                    <div class="stat-title">Fokus</div>
+                    <div class="stat-value">Real projects • Portfolio</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="card card-glass reveal">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <div class="fw-semibold">Quick links</div>
+                        <div class="text-secondary small">Kontakt va profil havolalar</div>
+                      </div>
+                      <i class="bi bi-link-45deg fs-4 text-secondary"></i>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                      <a class="btn btn-outline-light btn-sm" href="#contact"><i class="bi bi-envelope me-1"></i> Email</a>
+                      <a class="btn btn-outline-light btn-sm" href="https://github.com/Ergashev-Oxunjon" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> GitHub</a>
+                      <a class="btn btn-outline-light btn-sm" href="https://t.me/Ergashev_Oxunjon" target="_blank" rel="noopener"><i class="bi bi-telegram me-1"></i> Telegram</a>
+                      <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/oxunjon_ergashev_" target="_blank" rel="noopener"><i class="bi bi-instagram me-1"></i> Instagram</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h1 fw-semibold">Skills</h2>
+          <p class="text-secondary mb-0">Scroll qiling — progresslar animatsiya bilan to‘ladi.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-4">
+            <div class="card card-glass reveal h-100">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-layout-text-window-reverse me-2"></i> Frontend</h3>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">HTML5</span><span class="text-secondary">90%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="90"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">CSS3</span><span class="text-secondary">85%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="CSS3" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="85"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Bootstrap 5</span><span class="text-secondary">88%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Bootstrap" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="88"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Responsive UI</span><span class="text-secondary">90%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Responsive UI" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="90"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-glass reveal h-100">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-braces me-2"></i> Backend</h3>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">REST API (concept)</span><span class="text-secondary">70%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="REST API" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="70"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Auth / Roles (concept)</span><span class="text-secondary">65%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Auth" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="65"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Database basics</span><span class="text-secondary">68%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Database basics" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="68"></div>
+                  </div>
+                </div>
+
+                <div class="mt-4 small text-secondary">
+                  <i class="bi bi-info-circle me-1"></i>
+                  Hozirgi portfolio statik. Contact form demo (fake success) ko‘rsatadi.
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-glass reveal h-100">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-tools me-2"></i> Tools</h3>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Git / GitHub</span><span class="text-secondary">78%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Git" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="78"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Figma (UI)</span><span class="text-secondary">72%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Figma" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="72"></div>
+                  </div>
+                </div>
+
+                <div class="skill" data-skill>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-secondary">Debugging</span><span class="text-secondary">80%</span>
+                  </div>
+                  <div class="progress progress-soft" role="progressbar" aria-label="Debugging" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" data-progress="80"></div>
+                  </div>
+                </div>
+
+                <div class="mt-4 d-flex flex-wrap gap-2">
+                  <span class="badge badge-soft"><i class="bi bi-lightning-charge me-1"></i> UX</span>
+                  <span class="badge badge-soft"><i class="bi bi-eye me-1"></i> Details</span>
+                  <span class="badge badge-soft"><i class="bi bi-kanban me-1"></i> Workflow</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3">
+          <div>
+            <h2 class="h1 fw-semibold mb-1">Projects</h2>
+            <p class="text-secondary mb-0">Filtrlash, hover glow, JS orqali render.</p>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-light btn-sm filter-btn is-active" type="button" data-filter="all">
+              All
+            </button>
+            <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="fullstack">
+              Fullstack
+            </button>
+            <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="frontend">
+              Frontend
+            </button>
+            <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="bootstrap">
+              Bootstrap
+            </button>
+          </div>
+        </div>
+
+        <div id="projectsGrid" class="row g-4 mt-1">
+          <!-- JS renders here -->
+        </div>
+
+        <div class="text-center mt-5 reveal">
+          <a class="btn btn-ghost px-4" href="#contact">
+            Project kerakmi? <span class="text-gradient fw-semibold">Bog‘laning</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h1 fw-semibold">Experience</h2>
+          <p class="text-secondary mb-0">Timeline formatida qisqa tajriba / yo‘l xarita.</p>
+        </div>
+
+        <div class="timeline mt-4">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                <div class="fw-semibold">Fullstack Developer (Talaba)</div>
+                <div class="text-secondary small"><i class="bi bi-calendar3 me-1"></i> 2024 — hozir</div>
+              </div>
+              <div class="text-secondary mt-2">
+                Portfolio va real loyiha klonlari orqali amaliy ko‘nikmalar: UI, responsive, JS logic, CRUD konseptlar.
+              </div>
+              <ul class="text-secondary mt-2 mb-0 nice-list">
+                <li>Bootstrap layout + custom design system</li>
+                <li>JS: filter, validation, scroll reveal, active nav</li>
+                <li>GitHub Pages’da deploy va dokumentatsiya</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                <div class="fw-semibold">Bootstrap Admin Template (Demo)</div>
+                <div class="text-secondary small"><i class="bi bi-calendar3 me-1"></i> 2025</div>
+              </div>
+              <div class="text-secondary mt-2">
+                Dashboard layout, sidebar, cards, charts placeholder va responsiveni to‘liq chiqargan demo.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                <div class="fw-semibold">Clone & Product UI Projects</div>
+                <div class="text-secondary small"><i class="bi bi-calendar3 me-1"></i> 2025 — 2026</div>
+              </div>
+              <div class="text-secondary mt-2">
+                Instagram clone UI, job application, e’lon sayti va hosting landing pages.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h1 fw-semibold">Testimonials</h2>
+          <p class="text-secondary mb-0">Demo fikrlar (xohlasangiz keyin o‘zingiznikiga almashtirasiz).</p>
+        </div>
+
+        <div id="testimonialsCarousel" class="carousel slide mt-4 reveal" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card card-glass">
+                <div class="card-body p-4 p-md-5">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="avatar">A</div>
+                      <div>
+                        <div class="fw-semibold">Akmal</div>
+                        <div class="text-secondary small">Frontend mentor</div>
+                      </div>
+                    </div>
+                    <div class="text-secondary"><i class="bi bi-quote fs-3"></i></div>
+                  </div>
+                  <p class="text-secondary mt-3 mb-0">
+                    Oxunjonning UI yondashuvi toza va tartibli. Animatsiyalar ham keragicha — ortiqcha emas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card-glass">
+                <div class="card-body p-4 p-md-5">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="avatar">M</div>
+                      <div>
+                        <div class="fw-semibold">Madina</div>
+                        <div class="text-secondary small">Project reviewer</div>
+                      </div>
+                    </div>
+                    <div class="text-secondary"><i class="bi bi-quote fs-3"></i></div>
+                  </div>
+                  <p class="text-secondary mt-3 mb-0">
+                    Responsiveda juda yaxshi ishlagan. Layout va spacing professional ko‘rinadi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card-glass">
+                <div class="card-body p-4 p-md-5">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="avatar">S</div>
+                      <div>
+                        <div class="fw-semibold">Sardor</div>
+                        <div class="text-secondary small">Teammate</div>
+                      </div>
+                    </div>
+                    <div class="text-secondary"><i class="bi bi-quote fs-3"></i></div>
+                  </div>
+                  <p class="text-secondary mt-3 mb-0">
+                    Kod tuzilmasi o‘qilishi oson. JS funksiyalar aniq va qisqa yozilgan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" aria-label="Oldingi">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" aria-label="Keyingi">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="carousel-indicators mt-3">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-label="1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="2"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h1 fw-semibold">Contact</h2>
+          <p class="text-secondary mb-0">Form validatsiya + fake success toast (GitHub Pages uchun).</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6">
+            <div class="card card-glass reveal h-100">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 fw-semibold mb-3">Let’s talk</h3>
+
+                <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                    <label class="form-label text-secondary" for="name">Ism</label>
+                    <input class="form-control form-control-dark" id="name" name="name" type="text" placeholder="Ismingiz" required minlength="2" />
+                    <div class="invalid-feedback">Iltimos, kamida 2 ta harf kiriting.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label text-secondary" for="email">Email</label>
+                    <input class="form-control form-control-dark" id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <div class="invalid-feedback">Iltimos, to‘g‘ri email kiriting.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label text-secondary" for="message">Xabar</label>
+                    <textarea class="form-control form-control-dark" id="message" name="message" rows="5" placeholder="Loyiha haqida yozing..." required minlength="10"></textarea>
+                    <div class="invalid-feedback">Iltimos, kamida 10 ta belgi yozing.</div>
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-gradient px-4" type="submit">
+                      <i class="bi bi-send me-1"></i> Send
+                    </button>
+                    <button class="btn btn-outline-light px-4" type="reset">
+                      <i class="bi bi-arrow-counterclockwise me-1"></i> Reset
+                    </button>
+                  </div>
+                </form>
+
+                <div class="mt-4 text-secondary small">
+                  <i class="bi bi-shield-check me-1"></i> Ma’lumotlar serverga yuborilmaydi — demo rejim.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card card-glass reveal h-100">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h5 fw-semibold mb-3">Links</h3>
+                <div class="d-grid gap-2">
+                  <a class="link-card" href="https://github.com/Ergashev-Oxunjon" target="_blank" rel="noopener" aria-label="GitHub profili">
+                    <span class="link-icon"><i class="bi bi-github"></i></span>
+                    <span>
+                      <span class="link-title">GitHub</span>
+                      <span class="link-sub text-secondary">Repo va loyihalar</span>
+                    </span>
+                    <i class="bi bi-arrow-right text-secondary"></i>
+                  </a>
+
+                  <a class="link-card" href="https://t.me/Ergashev_Oxunjon" target="_blank" rel="noopener" aria-label="Telegram">
+                    <span class="link-icon"><i class="bi bi-telegram"></i></span>
+                    <span>
+                      <span class="link-title">Telegram</span>
+                      <span class="link-sub text-secondary">Tezkor aloqa</span>
+                    </span>
+                    <i class="bi bi-arrow-right text-secondary"></i>
+                  </a>
+
+                  <a class="link-card" href="https://www.instagram.com/oxunjon_ergashev_" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span class="link-icon"><i class="bi bi-instagram"></i></span>
+                    <span>
+                      <span class="link-title">Instagram</span>
+                      <span class="link-sub text-secondary">Portfolio va post</span>
+                    </span>
+                    <i class="bi bi-arrow-right text-secondary"></i>
+                  </a>
+
+                  <a class="link-card" href="mailto:oxunjonergashev19@gmail.com" aria-label="Email">
+                    <span class="link-icon"><i class="bi bi-envelope"></i></span>
+                    <span>
+                      <span class="link-title">Email</span>
+                      <span class="link-sub text-secondary">oxunjonergashev19@gmail.com</span>
+                    </span>
+                    <i class="bi bi-arrow-right text-secondary"></i>
+                  </a>
+                </div>
+
+                <hr class="border-secondary opacity-25 my-4" />
+
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge badge-soft"><i class="bi bi-clock me-1"></i> Tez javob</span>
+                  <span class="badge badge-soft"><i class="bi bi-brush me-1"></i> Clean UI</span>
+                  <span class="badge badge-soft"><i class="bi bi-cpu me-1"></i> Smooth UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-between">
+          <div class="text-secondary small">
+            © <span id="yearNow"></span> Ergashev Oxunjon. All rights reserved.
+          </div>
+          <div class="d-flex gap-2">
+            <a class="icon-btn" href="https://github.com/Ergashev-Oxunjon" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="icon-btn" href="https://t.me/Ergashev_Oxunjon" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+            <a class="icon-btn" href="https://www.instagram.com/oxunjon_ergashev_" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button id="toTop" class="to-top" type="button" aria-label="Yuqoriga qaytish">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="successToast" class="toast text-bg-dark border border-secondary border-opacity-25" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-header bg-transparent text-white border-0">
+          <i class="bi bi-check-circle me-2 text-success"></i>
+          <strong class="me-auto">Success</strong>
+          <small class="text-secondary">hozir</small>
+          <button type="button" class="btn-close btn-close-white ms-2 mb-1" data-bs-dismiss="toast" aria-label="Yopish"></button>
+        </div>
+        <div class="toast-body text-secondary">
+          Xabaringiz qabul qilindi (demo). Tez orada bog‘lanaman!
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Project data then main -->
+  <script src="projects/project-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
