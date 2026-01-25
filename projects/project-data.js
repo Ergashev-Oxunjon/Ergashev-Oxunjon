@@ -1,63 +1,41 @@
+// projects/project-data.js
+// Eslatma: live/repo linklarini o'zingizniki bilan to'ldiring yoki vaqtincha # qoldiring.
 
 window.PROJECTS = [
   {
     id: "portfolio",
-    title: "Portfolio",
-    category: "frontend",
-    image: "assets/img/projects/portfolio.png",
-    description: "Premium dark UI + animatsiyalar. GitHub Pages uchun 100% mos statik portfolio.",
+    title: "Premium Portfolio",
+    category: ["frontend", "bootstrap"],
+    description: "Dark mode, gradient accent, scroll reveal va micro-interactions bilan premium portfolio.",
     tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: "hosting",
-    title: "Hosting sayti",
-    category: "frontend",
-    image: "assets/img/projects/hosting.png",
-    description: "Hosting landing page: pricing, FAQ, CTA, responsive grid va micro-interactions.",
-    tech: ["Bootstrap", "CSS", "JavaScript"],
-    github: "#",
-    demo: "#"
+    live: "https://ergashev-oxunjon.github.io/Ergashev-Oxunjon/",
+    repo: "https://github.com/Ergashev-Oxunjon/Ergashev-Oxunjon"
   },
   {
     id: "admin",
-    title: "Bootstrap orqali demo sayt",
-    category: "bootstrap",
-    image: "assets/img/projects/admin.png",
-    description: "Admin dashboard: sidebar, cards, tables/forms sahifalari demo ko'rinishida.",
-    tech: ["Bootstrap", "HTML", "CSS"],
-    github: "#",
-    demo: "#"
+    title: "Bootstrap Admin Dashboard",
+    category: ["frontend", "bootstrap"],
+    description: "Sidebar, cards, responsiv dashboard layout. UI strukturasi va component yondashuv.",
+    tech: ["Bootstrap", "JavaScript"],
+    live: "#",
+    repo: "#"
   },
   {
     id: "job-app",
-    title: "Job application",
-    category: "fullstack",
-    image: "assets/img/projects/job.png",
-    description: "Job application UI: job list, detail, apply form, validation (demo).",
-    tech: ["Bootstrap", "JavaScript", "UI/UX"],
-    github: "#",
-    demo: "#"
+    title: "Job Application UI",
+    category: ["frontend"],
+    description: "Forma, validatsiya, clean UI va foydalanuvchi flow’iga e’tibor qilingan interface.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "#",
+    repo: "#"
   },
   {
-    id: "instagram-clone",
-    title: "Instagram clone",
-    category: "frontend",
-    image: "assets/img/projects/insta.png",
-    description: "Instagram UI clone: feed, profile, post card, responsive layout (demo).",
+    id: "instagram-ui",
+    title: "Instagram Clone UI",
+    category: ["frontend"],
+    description: "Feed, profile, responsive grid. Real ilova UI’iga yaqin ko‘rinish.",
     tech: ["HTML", "CSS", "Bootstrap"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: "elon",
-    title: "E’lon sayti",
-    category: "fullstack",
-    image: "assets/img/projects/elon.png",
-    description: "E’lonlar platformasi UI: filter, category, cards, contact flow (demo).",
-    tech: ["Bootstrap", "JavaScript", "UI"],
-    github: "#",
-    demo: "#"
+    live: "#",
+    repo: "#"
   }
 ];
