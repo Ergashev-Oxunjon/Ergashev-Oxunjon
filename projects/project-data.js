@@ -25,17 +25,9 @@ window.PROJECTS = [
     tech: ["HTML", "CSS", "JavaScript"],
     live: "#",
     repo: "#"
-  },
-  {
-    id: "instagram-ui",
-    title: "Instagram Clone UI",
-    category: ["frontend"],
-    description: "Feed, profile, responsive grid. Real ilova UI’iga yaqin ko‘rinish.",
-    tech: ["HTML", "CSS", "Bootstrap"],
-    live: "#",
-    repo: "#"
   }
 ];
+
 
 
 
