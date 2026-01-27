@@ -22,11 +22,12 @@ window.PROJECTS = [
     title: "Job Application UI",
     category: ["frontend"],
     description: "Forma, validatsiya, clean UI va foydalanuvchi flow’iga e’tibor qilingan interface.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    repo: "#"
+    tech: ["HTML", "CSS"],
+    demo: "https://ergashev-oxunjon.github.io/Job_application_UI/",
+    github: "https://ergashev-oxunjon.github.io/Job_application_UI"
   }
 ];
+
 
 
 
