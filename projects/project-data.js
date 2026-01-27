@@ -13,11 +13,11 @@ window.PROJECTS = [
   },
   {
     id: "admin",
-    title: "Bootstrap Admin Dashboard",
+    title: "Bootstrap Dashboard",
     category: ["frontend", "bootstrap"],
     description: "Sidebar, cards, responsiv dashboard layout. UI strukturasi va component yondashuv.",
     tech: ["Bootstrap", "JavaScript"],
-    live: "#",
+    live: "https://ergashev-oxunjon.github.io/DashboardKit/",
     repo: "#"
   },
   {
@@ -39,3 +39,4 @@ window.PROJECTS = [
     repo: "#"
   }
 ];
+
