@@ -1,6 +1,3 @@
-// projects/project-data.js
-// Eslatma: live/repo linklarini o'zingizniki bilan to'ldiring yoki vaqtincha # qoldiring.
-
 window.PROJECTS = [
   {
     id: "portfolio",
@@ -18,7 +15,7 @@ window.PROJECTS = [
     description: "Sidebar, cards, responsiv dashboard layout. UI strukturasi va component yondashuv.",
     tech: ["Bootstrap", "JavaScript"],
     live: "https://ergashev-oxunjon.github.io/DashboardKit/",
-    repo: "#"
+    repo: "https://ergashev-oxunjon.github.io/DashboardKit"
   },
   {
     id: "job-app",
@@ -39,4 +36,5 @@ window.PROJECTS = [
     repo: "#"
   }
 ];
+
 
