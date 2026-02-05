@@ -5,8 +5,9 @@ window.PROJECTS = [
     category: ["frontend", "bootstrap"],
     description: "Dark mode, gradient accent, scroll reveal va micro-interactions bilan premium portfolio.",
     tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    live: "https://ergashev-oxunjon.github.io/Ergashev-Oxunjon/",
-    repo: "https://github.com/Ergashev-Oxunjon/Ergashev-Oxunjon"
+    live: "https://ergashev-oxunjon.github.io/Portfolio-Developer/",
+    repo: "https://ergashev-oxunjon.github.io/Portfolio-Developer",
+    image: "assets/img/image_2026-02-05_09-06-02.png"
   },
  {
   id: "admin",
@@ -29,6 +30,7 @@ window.PROJECTS = [
     image: "assets/img/image_2026-01-27_20-42-11.png"
   }
 ];
+
 
 
 
